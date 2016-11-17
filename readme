@@ -1,0 +1,19 @@
+Three files:
+
+
+291labels.mat:
+
+MATLAB mat file containing l2-normalized GLOVE word vectors representing 291 default IAPRTC12 tags.
+
+
+l2_normalized_semantic_SVM_full_data_with_val_291labels_no_zero.mat:
+
+MATLAB mat file containing l2-normalized training/validation/testing image features as well as their tags annotation.
+
+
+fast0tag.py:
+
+A ready-to-run python toy example on IAPRTC12 dataset. Should reproduce the same results we reported in our paper.
+
+
+This example is for conventional tagging. However it should be easy to be modified into zero-shot senarios. you are welcome to modify it to run on your own dataset!
