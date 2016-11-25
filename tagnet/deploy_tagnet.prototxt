@@ -122,3 +122,10 @@ layer {
     }
   }
 }
+
+layer {
+    name: "norml2"
+    type: "Norm"
+    bottom: "fc4"
+    top: "norml2"
+}
