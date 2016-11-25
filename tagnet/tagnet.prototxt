@@ -331,6 +331,14 @@ layer {
     top: "norml2"
 }
 
+layer {
+    name: "norml2B"
+    type: "Norm"
+    bottom: "fc_b2"
+    top: "norml2B"
+}
+
+
 layer{
 	name: "lossB"
 	type: "SigmoidCrossEntropyLoss"
@@ -339,13 +347,14 @@ layer{
     top: "lossB"
     propagate_down: true
     propagate_down: false
-    loss_weight : 0.1
+    loss_weight : 0.01
 }
 
 layer{
 	name: "lossTag"
 	type: "EuclideanLoss"
 	bottom: "norml2"
-	bottom: "fc_b2"
+	bottom: "norml2B"
     top: "lossTag"
+    loss_weight : 100
 }

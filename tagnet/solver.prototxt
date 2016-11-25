@@ -10,7 +10,7 @@ max_iter: 50000
 momentum: 0.9
 weight_decay: 0.0005
 snapshot: 40000
-snapshot_prefix: "models4/"
+snapshot_prefix: "models5/"
 solver_mode: GPU
 device_id: 0
 
