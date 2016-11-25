@@ -14,21 +14,6 @@ layer{
         shuffle: true
 	}
 }
-layer{
-	name:"data"
-	type: "HDF5Data"
-	top: "image_data"
-	top: "label_data"
-	top: "corrupt_label_data"
-	include{
-		phase:TEST
-	}	
-	hdf5_data_param{
-		source : "path_test_hdf5.txt" 
-		batch_size: 100 
-	}
-}
-
 
 
 layer {
@@ -47,7 +32,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1000
+    num_output: 291
     weight_filler {
       type: "gaussian"
       std: 0.005
@@ -121,7 +106,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1000
+    num_output: 291
     weight_filler {
       type: "gaussian"
       std: 0.005
@@ -348,11 +333,13 @@ layer {
 
 layer{
 	name: "lossB"
-	type: "EuclideanLoss"
+	type: "SigmoidCrossEntropyLoss"
 	bottom: "fc_c2"
 	bottom: "label_data"
     top: "lossB"
-#    loss_weight : 0.01
+    propagate_down: true
+    propagate_down: false
+    loss_weight : 0.1
 }
 
 layer{

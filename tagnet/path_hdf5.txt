@@ -1,1 +1,1 @@
-/users/gpu/agjayant1/IA12_example/IA12_tagnet2.h5
+/users/gpu/agjayant1/IA12_example/IA12_tagnet_sigmoid.h5
