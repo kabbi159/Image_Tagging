@@ -2,20 +2,20 @@
 ### **Implementations of Fast-Tag and Fast-Zero-Tag**
 <br />
 
-### **Code sources**
-• We procured the codes for Deep Learning for Fast-Zero Tag from http://crcv.ucf.edu/projects/fastzeroshot/ and Fast Tag from www.cse.wustl.edu/~mchen/code/FastTag/fasttag.tar.gz.
-• We implemented Rank-SVM for Fast-Tag ourselves.
-• We also modified the above code for learning the kernelized mapping from image vector to principal
+## **Code sources**
+* We procured the codes for Deep Learning for Fast-Zero Tag from http://crcv.ucf.edu/projects/fastzeroshot/ and Fast Tag from www.cse.wustl.edu/~mchen/code/FastTag/fasttag.tar.gz.
+* We implemented Rank-SVM for Fast-Tag ourselves.
+* We also modified the above code for learning the kernelized mapping from image vector to principal
   direction in ranking SVM’s.
-• We implemented the neural network(Figure 3) for fasttag in caffe[5].
-• DATASET: IAPRTC-12
+* We implemented the neural network(Figure 3) for fasttag in caffe[5].
+* DATASET: IAPRTC-12
 <br />
 
-### **Acknowledgments**
+## **Acknowledgments**
 We thank our instructor, Professor Piyush Rai for motivating us and guiding us throughout the project.
 <br />
 
-### **References**
+## **References**
 [1] Minmin Chen (Amazon.com, Seattle, WA 98109), Alice Zheng (Microsoft Research, Redmond, WA
 98052), Kilian Q. Weinberger (Washington University in St. Louis, St. Louis, MO 63130)Fast Image
 Tagging 2013 <br />
